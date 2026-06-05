@@ -18,26 +18,47 @@ cross-module workflows via a verifiable digital handshake protocol.
 ## Project Structure
 
 glassboard/
+
 ├── src/                    # React Native app source
+
 │   ├── config/             # Firebase initialisation
+
 │   ├── contexts/           # React context providers
+
 │   ├── hooks/              # Custom React hooks
+
 │   ├── navigation/         # React Navigation stack
+
 │   ├── screens/            # Screen components
+
 │   │   ├── auth/           # Login, register, onboarding
+
 │   │   ├── modules/        # Phase 2+
+
 │   │   ├── tasks/          # Phase 2+
+
 │   │   ├── handshakes/     # Phase 4+
+
 │   │   ├── files/          # Phase 7+
+
 │   │   └── admin/          # Phase 6+
+
 │   ├── types/              # Shared TypeScript types
+
 │   └── utils/              # Helpers
+
 ├── functions/              # Firebase Cloud Functions
+
 │   └── src/
+
 │       ├── auth/           # onNewUser trigger
+
 │       ├── handshakes/     # Phase 4+
+
 │       ├── modules/        # Phase 3+
+
 │       └── index.ts        # Function exports
+
 └── firestore.rules         # Security rules
 
 ## Getting Started
